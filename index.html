@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Highlight Image with Mouse</title>
+
+    <!-- CSS File  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Want to see a Guinea Pig 🐷</h1>
+      <div id="focus"></div>
+    </div>
+    <script>
+      let focus = document.getElementById("focus");
+      let focusHalfWidth = focus.offsetWidth / 2;
+      document.onmousemove = function (e) {
+        focus.style.left = e.pageX - focusHalfWidth + "px";
+        focus.style.top = e.pageY - focusHalfWidth + "px";
+      };
+    </script>
+  </body>
+</html>
