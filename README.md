@@ -1,0 +1,1 @@
+# highlight-image-with-mouse
